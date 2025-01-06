@@ -9,16 +9,8 @@ Factory::Factory() {}
 
 Factory::~Factory() {}
 
-ConcreteFactory::ConcreteFactory()
-{
-    cout << "ConcreteFactory ... " << endl;
-}
+ConcreteFactory::ConcreteFactory() { cout << "ConcreteFactory ... " << endl; }
 
-ConcreteFactory::~ConcreteFactory()
-{
-}
+ConcreteFactory::~ConcreteFactory() {}
 
-Product *ConcreteFactory::CreateProduct()
-{
-    return new ConcreteProduct();
-}
+Product *ConcreteFactory::CreateProduct() { return new ConcreteProduct(); }

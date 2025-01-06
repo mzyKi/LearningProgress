@@ -2,15 +2,14 @@
 #define _SINGLETON_H_
 #include <iostream>
 using namespace std;
-class Singleton
-{
+class Singleton {
 public:
-    static Singleton *Instance();
+  static Singleton *Instance();
 
 protected:
-    Singleton();
+  Singleton();
 
 private:
-    static Singleton *_instance;
+  static Singleton *_instance;
 };
 #endif //~_SINGLETON_H_

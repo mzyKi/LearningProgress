@@ -3,24 +3,22 @@
 
 class Product;
 
-class Factory
-{
+class Factory {
 public:
-    virtual ~Factory() = 0;
-    virtual Product *CreateProduct() = 0;
+  virtual ~Factory() = 0;
+  virtual Product *CreateProduct() = 0;
 
 protected:
-    Factory();
+  Factory();
 
 private:
 };
 
-class ConcreteFactory : public Factory
-{
+class ConcreteFactory : public Factory {
 public:
-    ~ConcreteFactory();
-    ConcreteFactory();
-    Product *CreateProduct();
+  ~ConcreteFactory();
+  ConcreteFactory();
+  Product *CreateProduct();
 
 protected:
 private:
